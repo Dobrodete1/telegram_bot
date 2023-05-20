@@ -18,7 +18,7 @@ const help = `Зачем ты задаешь глупые вопросы
 bot.help((ctx) => ctx.reply(help));
 bot.hears(["hi", /hello/gi, /Привет/gi, /Здарова/gi, /арбаныз/gi, /салам/gi], (ctx) => ctx.reply("Здарова заебал!!"));
 
-bot.hears([/dobrodete[l1]/gi, /meder/gi, /медер/gi, /добродетель?/gi], (ctx) =>
+bot.hears([/dobrodete[l1]/gi, /meder/gi, /медер/gi, /добродетель?/gi, /Медя/gi], (ctx) =>
   ctx.reply("Он занят лучше позвони +996999932901")
 );
 
