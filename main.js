@@ -38,6 +38,13 @@ const getRandomItem = (arr = []) => {
   return arr[randomIndex];
 };
 
+bot.setMyCommands([
+  {command: '/start', description:'Включение бота'},
+  {command: '/info', description:'Краткая информация бота'},
+  {command: '/love', description:'Любовное послание'},
+  {command: '/sorry', description:'Любовное извинение для девушки'},
+])
+
 bot.start((ctx) => {
   ctx.reply(text);
 });
